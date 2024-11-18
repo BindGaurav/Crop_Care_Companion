@@ -6,9 +6,8 @@ import 'package:http/http.dart' as http;
 // ThingSpeak Configuration
 class ThingSpeakConfig {
   static const String baseUrl = "https://api.thingspeak.com";
-  static const String channelId = "2716041"; // Replace with your channel ID
-  static const String readApiKey =
-      "3DBY1HP84DH873TM"; // Replace with your read API key
+  static const String channelId = "YOUR_CHANNEL_ID"; // Replace with your channel ID
+  static const String readApiKey = "YOUR_API_KEY"; // Replace with your read API key
 
   static String get channelFeedEndpoint =>
       "$baseUrl/channels/$channelId/feeds.json?api_key=$readApiKey&results=1";
@@ -16,7 +15,7 @@ class ThingSpeakConfig {
 
 // API Configuration for Prediction Service
 class ApiConfig {
-  static const String baseUrl = "http://192.168.137.199:8000";
+  static const String baseUrl = "http://YOUR_DEVICE_IP:800";
   static String get predictionEndpoint => "$baseUrl/predict";
   static String get healthEndpoint => "$baseUrl/health";
 }
