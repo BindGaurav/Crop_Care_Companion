@@ -68,7 +68,7 @@ def retrieval_qa_chain(llm, prompt, db):
 app = Flask(__name__)
 CORS(app)
 
-ngrok.set_auth_token("2ojVu2mApj3A22QmTtqKSujn0dY_uCePUrfYw7BxgXCfhhSr")
+ngrok.set_auth_token("YOUR_AUTH_TOKEN")
 public_url = ngrok.connect(port_no).public_url
 
 # Load the vectorstore and model on startup
