@@ -25,7 +25,7 @@ class _ChatbotScreenState extends State<ChatbotScreen> {
   bool _isLoading = false;
 
   Future<void> sendQuestion(String question) async {
-    final url = Uri.parse('https://e391-34-16-164-177.ngrok-free.app/ask');
+    final url = Uri.parse('YOUR_ngork_url');
     final headers = {'Content-Type': 'application/json'};
     final body = jsonEncode({'question': question});
 
