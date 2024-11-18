@@ -35,7 +35,7 @@ def load_and_train_model():
     
     try:
         # Load the dataset
-        file_path = "C:/Users/Gaurav Bind/Downloads/Crop_recommendation.csv"  # Update path as needed
+        file_path = "YOUR_FILE_PATH"  # Update path as needed
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Dataset not found at {file_path}")
             
