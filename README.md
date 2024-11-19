@@ -1,4 +1,4 @@
-**Overview**
+## Overview
 
 This project involves an AI-powered crop prediction system. The app connects to an AI model hosted via Google Colab and provides endpoints for predictions and health checks.
 
